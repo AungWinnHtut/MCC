@@ -1,0 +1,51 @@
+    1  ls
+    2  pwd
+    3  d:
+    4  cd d:/
+    5  dir
+    6  ls
+    7  ls -l
+    8  cd mcc
+    9  ls
+   10  md git
+   11  mkdir git
+   12  cd cpp
+   13  ls
+   14  cd functionbasic
+   15  ls
+   16  copy main.c d:/mcc/git/functionbasic.c
+   17  cp main.c d:/mcc/git/funbasic.c
+   18  cd ..
+   19  ls
+   20  cd funperfect
+   21  cp main.c d:/mcc/git/funperfect.c
+   22  cd ..
+   23  ls
+   24  cd tempfunction
+   25  cp main.c d:/mcc/git/tempfun.c
+   26  cd ..
+   27  ls
+   28  cd ..
+   29  ls
+   30  cd git
+   31  ls
+   32  git init
+   33  git add --all
+   34  git status
+   35  git commit -m "add new source code files, funbasic.c, funperfect.c, tempfun.c"
+   36  git log
+   37  git remote -v
+   38  git remote add origin https://github.com/AungWinHtut/MCC.git
+   39  git remote -v
+   40  git remote pull origin master
+   41  git pull origin master
+   42  git remote remove origin
+   43  git remote add origin https://github.com/AungWinnHtut/Mcc.git
+   44  git pull origin master
+   45  ls -l
+   46  git status
+   47  git add --all
+   48  git status
+   49  git push -u origin master
+   50  history
+   51  history > history.txt
