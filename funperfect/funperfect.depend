@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1434546339 source:d:\mcc\cpp\funperfect\main.c
+	<stdio.h>
+	<stdlib.h>
+
