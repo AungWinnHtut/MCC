@@ -1,6 +1,8 @@
 ﻿Imports System.IO
 Public Class frmGame
     Dim iPos As Integer = 1
+    Dim iBiteCouter As Integer = 0
+    Dim iLadderCounter As Integer = 0
     Dim sPath As String = Directory.GetCurrentDirectory
     Private Sub btnDice_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDice.Click
         Dim Generator As System.Random = New System.Random()
@@ -11,11 +13,13 @@ Public Class frmGame
 
         If (iPos + dice) <= 30 Then
             iPos = iPos + dice
-            subShowPlayer(iPos)
+        ElseIf (iPos + dice) > 30 Then
+            iPos = 30 - (iPos + dice - 30)
         End If
 
+        subShowPlayer(iPos)
 
-        
+
         If iPos = 30 Then
             MessageBox.Show("You won!!!!  LEVEL UP ")
         End If
@@ -25,8 +29,7 @@ Public Class frmGame
             PictureBox20.Image = Image.FromFile(sPath + "\dice\Char1.GIF")
             PictureBox20.Visible = True
             Timer8.Enabled = True
-
-
+            iLadderCounter = iLadderCounter + 1
         End If
 
 
@@ -35,8 +38,7 @@ Public Class frmGame
             PictureBox11.Image = Image.FromFile(sPath + "\dice\Char1.GIF")
             PictureBox11.Visible = True
             Timer2.Enabled = True
-
-
+            iBiteCouter = iBiteCouter + 1
         End If
 
         If (iPos = 17) Then
@@ -44,16 +46,18 @@ Public Class frmGame
             PictureBox17.Image = Image.FromFile(sPath + "\dice\Char1.GIF")
             PictureBox17.Visible = True
             Timer2.Enabled = True
-
-            If (iPos = 5) Then
-                subShowPlayer(iPos)
-                PictureBox5.Image = Image.FromFile(sPath + "\dice|Char1.GIF")
-                PictureBox5.Visible = True
-                Timer6.Enabled = True
-
-            End If
-
+            iBiteCouter = iBiteCouter + 1
         End If
+
+        If (iPos = 5) Then
+            subShowPlayer(iPos)
+            PictureBox5.Image = Image.FromFile(sPath + "\dice|Char1.GIF")
+            PictureBox5.Visible = True
+            Timer6.Enabled = True
+            iLadderCounter = iLadderCounter + 1
+        End If
+
+
 
 
         If (iPos = 19) Then
@@ -61,7 +65,7 @@ Public Class frmGame
             PictureBox19.Image = Image.FromFile(sPath + "\dice\Char1.GIF")
             PictureBox19.Visible = True
             Timer1.Enabled = True
-
+            iBiteCouter = iBiteCouter + 1
         End If
 
         If (iPos = 3) Then
@@ -69,7 +73,7 @@ Public Class frmGame
             PictureBox3.Image = Image.FromFile(sPath + "\dice\Char1.GIF")
             PictureBox3.Visible = True
             Timer5.Enabled = True
-
+            iLadderCounter = iLadderCounter + 1
 
         End If
         If (iPos = 21) Then
@@ -77,7 +81,7 @@ Public Class frmGame
             PictureBox21.Image = Image.FromFile(sPath + "\dice\Char1.GIF")
             PictureBox21.Visible = True
             Timer3.Enabled = True
-
+            iBiteCouter = iBiteCouter + 1
 
         End If
 
@@ -87,11 +91,12 @@ Public Class frmGame
             PictureBox27.Image = Image.FromFile(sPath + "\dice\Char1.GIF")
             PictureBox27.Visible = True
             Timer4.Enabled = True
-
+            iBiteCouter = iBiteCouter + 1
 
         End If
 
-
+        txtBite.Text = iBiteCouter.ToString()
+        txtLadder.Text = iLadderCounter.ToString()
 
     End Sub
 
@@ -248,6 +253,8 @@ Public Class frmGame
         subHide()
         iPos = 1
         subShowPlayer(iPos)
+        txtLadder.Text = "0"
+        txtBite.Text = "0"
     End Sub
 
     Private Sub Timer2_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer2.Tick
@@ -317,7 +324,8 @@ Public Class frmGame
     End Sub
 
     Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
-
+        txtBite.Text = "0"
+        txtLadder.Text = "0"
     End Sub
    
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click

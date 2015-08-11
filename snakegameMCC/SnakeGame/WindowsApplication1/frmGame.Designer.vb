@@ -67,6 +67,15 @@ Partial Class frmGame
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
+        Me.txtBite = New System.Windows.Forms.TextBox()
+        Me.txtLadder = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,11 +108,13 @@ Partial Class frmGame
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.picDice, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 310)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 344)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -113,7 +124,7 @@ Partial Class frmGame
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(88, 307)
+        Me.PictureBox2.Location = New System.Drawing.Point(88, 341)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -123,7 +134,7 @@ Partial Class frmGame
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(161, 310)
+        Me.PictureBox3.Location = New System.Drawing.Point(164, 344)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -133,7 +144,7 @@ Partial Class frmGame
         '
         'PictureBox4
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(234, 310)
+        Me.PictureBox4.Location = New System.Drawing.Point(241, 344)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -143,7 +154,7 @@ Partial Class frmGame
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(310, 310)
+        Me.PictureBox5.Location = New System.Drawing.Point(318, 344)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -153,7 +164,7 @@ Partial Class frmGame
         '
         'PictureBox6
         '
-        Me.PictureBox6.Location = New System.Drawing.Point(385, 310)
+        Me.PictureBox6.Location = New System.Drawing.Point(395, 344)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -163,7 +174,7 @@ Partial Class frmGame
         '
         'PictureBox7
         '
-        Me.PictureBox7.Location = New System.Drawing.Point(385, 238)
+        Me.PictureBox7.Location = New System.Drawing.Point(395, 261)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -173,7 +184,7 @@ Partial Class frmGame
         '
         'PictureBox8
         '
-        Me.PictureBox8.Location = New System.Drawing.Point(310, 238)
+        Me.PictureBox8.Location = New System.Drawing.Point(318, 261)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -183,7 +194,7 @@ Partial Class frmGame
         '
         'PictureBox9
         '
-        Me.PictureBox9.Location = New System.Drawing.Point(234, 238)
+        Me.PictureBox9.Location = New System.Drawing.Point(240, 261)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -193,7 +204,7 @@ Partial Class frmGame
         '
         'PictureBox10
         '
-        Me.PictureBox10.Location = New System.Drawing.Point(161, 238)
+        Me.PictureBox10.Location = New System.Drawing.Point(161, 261)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -203,7 +214,7 @@ Partial Class frmGame
         '
         'PictureBox11
         '
-        Me.PictureBox11.Location = New System.Drawing.Point(88, 238)
+        Me.PictureBox11.Location = New System.Drawing.Point(88, 261)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -213,7 +224,7 @@ Partial Class frmGame
         '
         'PictureBox12
         '
-        Me.PictureBox12.Location = New System.Drawing.Point(12, 238)
+        Me.PictureBox12.Location = New System.Drawing.Point(12, 261)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -223,7 +234,7 @@ Partial Class frmGame
         '
         'PictureBox13
         '
-        Me.PictureBox13.Location = New System.Drawing.Point(12, 160)
+        Me.PictureBox13.Location = New System.Drawing.Point(12, 178)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -233,7 +244,7 @@ Partial Class frmGame
         '
         'PictureBox14
         '
-        Me.PictureBox14.Location = New System.Drawing.Point(88, 160)
+        Me.PictureBox14.Location = New System.Drawing.Point(88, 177)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -243,7 +254,7 @@ Partial Class frmGame
         '
         'PictureBox15
         '
-        Me.PictureBox15.Location = New System.Drawing.Point(161, 160)
+        Me.PictureBox15.Location = New System.Drawing.Point(161, 178)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -253,7 +264,7 @@ Partial Class frmGame
         '
         'PictureBox16
         '
-        Me.PictureBox16.Location = New System.Drawing.Point(234, 160)
+        Me.PictureBox16.Location = New System.Drawing.Point(241, 178)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -263,7 +274,7 @@ Partial Class frmGame
         '
         'PictureBox17
         '
-        Me.PictureBox17.Location = New System.Drawing.Point(310, 160)
+        Me.PictureBox17.Location = New System.Drawing.Point(317, 178)
         Me.PictureBox17.Name = "PictureBox17"
         Me.PictureBox17.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -273,7 +284,7 @@ Partial Class frmGame
         '
         'PictureBox18
         '
-        Me.PictureBox18.Location = New System.Drawing.Point(385, 160)
+        Me.PictureBox18.Location = New System.Drawing.Point(395, 178)
         Me.PictureBox18.Name = "PictureBox18"
         Me.PictureBox18.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -283,7 +294,7 @@ Partial Class frmGame
         '
         'PictureBox19
         '
-        Me.PictureBox19.Location = New System.Drawing.Point(385, 90)
+        Me.PictureBox19.Location = New System.Drawing.Point(395, 97)
         Me.PictureBox19.Name = "PictureBox19"
         Me.PictureBox19.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -293,7 +304,7 @@ Partial Class frmGame
         '
         'PictureBox20
         '
-        Me.PictureBox20.Location = New System.Drawing.Point(310, 90)
+        Me.PictureBox20.Location = New System.Drawing.Point(318, 97)
         Me.PictureBox20.Name = "PictureBox20"
         Me.PictureBox20.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -303,7 +314,7 @@ Partial Class frmGame
         '
         'PictureBox21
         '
-        Me.PictureBox21.Location = New System.Drawing.Point(234, 90)
+        Me.PictureBox21.Location = New System.Drawing.Point(241, 97)
         Me.PictureBox21.Name = "PictureBox21"
         Me.PictureBox21.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -313,7 +324,7 @@ Partial Class frmGame
         '
         'PictureBox22
         '
-        Me.PictureBox22.Location = New System.Drawing.Point(161, 90)
+        Me.PictureBox22.Location = New System.Drawing.Point(161, 97)
         Me.PictureBox22.Name = "PictureBox22"
         Me.PictureBox22.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -323,7 +334,7 @@ Partial Class frmGame
         '
         'PictureBox23
         '
-        Me.PictureBox23.Location = New System.Drawing.Point(88, 90)
+        Me.PictureBox23.Location = New System.Drawing.Point(88, 97)
         Me.PictureBox23.Name = "PictureBox23"
         Me.PictureBox23.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -333,7 +344,7 @@ Partial Class frmGame
         '
         'PictureBox24
         '
-        Me.PictureBox24.Location = New System.Drawing.Point(12, 90)
+        Me.PictureBox24.Location = New System.Drawing.Point(12, 97)
         Me.PictureBox24.Name = "PictureBox24"
         Me.PictureBox24.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -343,7 +354,7 @@ Partial Class frmGame
         '
         'PictureBox25
         '
-        Me.PictureBox25.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox25.Location = New System.Drawing.Point(12, 19)
         Me.PictureBox25.Name = "PictureBox25"
         Me.PictureBox25.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -353,7 +364,7 @@ Partial Class frmGame
         '
         'PictureBox26
         '
-        Me.PictureBox26.Location = New System.Drawing.Point(88, 12)
+        Me.PictureBox26.Location = New System.Drawing.Point(89, 19)
         Me.PictureBox26.Name = "PictureBox26"
         Me.PictureBox26.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -363,7 +374,7 @@ Partial Class frmGame
         '
         'PictureBox27
         '
-        Me.PictureBox27.Location = New System.Drawing.Point(161, 12)
+        Me.PictureBox27.Location = New System.Drawing.Point(164, 19)
         Me.PictureBox27.Name = "PictureBox27"
         Me.PictureBox27.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -373,7 +384,7 @@ Partial Class frmGame
         '
         'PictureBox28
         '
-        Me.PictureBox28.Location = New System.Drawing.Point(234, 12)
+        Me.PictureBox28.Location = New System.Drawing.Point(238, 19)
         Me.PictureBox28.Name = "PictureBox28"
         Me.PictureBox28.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -383,7 +394,7 @@ Partial Class frmGame
         '
         'PictureBox29
         '
-        Me.PictureBox29.Location = New System.Drawing.Point(310, 12)
+        Me.PictureBox29.Location = New System.Drawing.Point(318, 19)
         Me.PictureBox29.Name = "PictureBox29"
         Me.PictureBox29.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -393,7 +404,7 @@ Partial Class frmGame
         '
         'PictureBox30
         '
-        Me.PictureBox30.Location = New System.Drawing.Point(385, 12)
+        Me.PictureBox30.Location = New System.Drawing.Point(394, 19)
         Me.PictureBox30.Name = "PictureBox30"
         Me.PictureBox30.Size = New System.Drawing.Size(50, 49)
         Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -403,13 +414,17 @@ Partial Class frmGame
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.txtLadder)
+        Me.GroupBox1.Controls.Add(Me.txtBite)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.picDice)
         Me.GroupBox1.Controls.Add(Me.btnDice)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 374)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 452)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(444, 100)
+        Me.GroupBox1.Size = New System.Drawing.Size(460, 100)
         Me.GroupBox1.TabIndex = 30
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Control"
@@ -417,7 +432,7 @@ Partial Class frmGame
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(262, 24)
+        Me.Button2.Location = New System.Drawing.Point(389, 32)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(49, 39)
         Me.Button2.TabIndex = 3
@@ -427,7 +442,7 @@ Partial Class frmGame
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(183, 24)
+        Me.Button1.Location = New System.Drawing.Point(180, 32)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 39)
         Me.Button1.TabIndex = 2
@@ -436,7 +451,7 @@ Partial Class frmGame
         '
         'picDice
         '
-        Me.picDice.Location = New System.Drawing.Point(111, 11)
+        Me.picDice.Location = New System.Drawing.Point(117, 19)
         Me.picDice.Name = "picDice"
         Me.picDice.Size = New System.Drawing.Size(57, 56)
         Me.picDice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -446,7 +461,7 @@ Partial Class frmGame
         'btnDice
         '
         Me.btnDice.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDice.Location = New System.Drawing.Point(6, 19)
+        Me.btnDice.Location = New System.Drawing.Point(12, 27)
         Me.btnDice.Name = "btnDice"
         Me.btnDice.Size = New System.Drawing.Size(99, 44)
         Me.btnDice.TabIndex = 0
@@ -477,44 +492,115 @@ Partial Class frmGame
         'Timer8
         '
         '
+        'txtBite
+        '
+        Me.txtBite.Location = New System.Drawing.Point(341, 28)
+        Me.txtBite.Name = "txtBite"
+        Me.txtBite.Size = New System.Drawing.Size(43, 20)
+        Me.txtBite.TabIndex = 4
+        '
+        'txtLadder
+        '
+        Me.txtLadder.Location = New System.Drawing.Point(341, 58)
+        Me.txtLadder.Name = "txtLadder"
+        Me.txtLadder.Size = New System.Drawing.Size(43, 20)
+        Me.txtLadder.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(261, 33)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(62, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "BiteCounter"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(261, 61)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(77, 13)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "LadderCounter"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(475, 24)
+        Me.MenuStrip1.TabIndex = 31
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackgroundImage = CType(resources.GetObject("GroupBox2.BackgroundImage"), System.Drawing.Image)
+        Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox2.Controls.Add(Me.PictureBox26)
+        Me.GroupBox2.Controls.Add(Me.PictureBox1)
+        Me.GroupBox2.Controls.Add(Me.PictureBox30)
+        Me.GroupBox2.Controls.Add(Me.PictureBox2)
+        Me.GroupBox2.Controls.Add(Me.PictureBox29)
+        Me.GroupBox2.Controls.Add(Me.PictureBox3)
+        Me.GroupBox2.Controls.Add(Me.PictureBox28)
+        Me.GroupBox2.Controls.Add(Me.PictureBox4)
+        Me.GroupBox2.Controls.Add(Me.PictureBox27)
+        Me.GroupBox2.Controls.Add(Me.PictureBox5)
+        Me.GroupBox2.Controls.Add(Me.PictureBox6)
+        Me.GroupBox2.Controls.Add(Me.PictureBox25)
+        Me.GroupBox2.Controls.Add(Me.PictureBox7)
+        Me.GroupBox2.Controls.Add(Me.PictureBox24)
+        Me.GroupBox2.Controls.Add(Me.PictureBox8)
+        Me.GroupBox2.Controls.Add(Me.PictureBox23)
+        Me.GroupBox2.Controls.Add(Me.PictureBox9)
+        Me.GroupBox2.Controls.Add(Me.PictureBox22)
+        Me.GroupBox2.Controls.Add(Me.PictureBox10)
+        Me.GroupBox2.Controls.Add(Me.PictureBox21)
+        Me.GroupBox2.Controls.Add(Me.PictureBox11)
+        Me.GroupBox2.Controls.Add(Me.PictureBox20)
+        Me.GroupBox2.Controls.Add(Me.PictureBox12)
+        Me.GroupBox2.Controls.Add(Me.PictureBox19)
+        Me.GroupBox2.Controls.Add(Me.PictureBox13)
+        Me.GroupBox2.Controls.Add(Me.PictureBox18)
+        Me.GroupBox2.Controls.Add(Me.PictureBox14)
+        Me.GroupBox2.Controls.Add(Me.PictureBox17)
+        Me.GroupBox2.Controls.Add(Me.PictureBox15)
+        Me.GroupBox2.Controls.Add(Me.PictureBox16)
+        Me.GroupBox2.Location = New System.Drawing.Point(8, 35)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(460, 408)
+        Me.GroupBox2.TabIndex = 32
+        Me.GroupBox2.TabStop = False
+        '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
+        '
+        'SaveToolStripMenuItem
+        '
+        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToolStripMenuItem.Text = "Save"
+        '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(447, 473)
+        Me.ClientSize = New System.Drawing.Size(475, 564)
         Me.ControlBox = False
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.PictureBox30)
-        Me.Controls.Add(Me.PictureBox29)
-        Me.Controls.Add(Me.PictureBox28)
-        Me.Controls.Add(Me.PictureBox27)
-        Me.Controls.Add(Me.PictureBox26)
-        Me.Controls.Add(Me.PictureBox25)
-        Me.Controls.Add(Me.PictureBox24)
-        Me.Controls.Add(Me.PictureBox23)
-        Me.Controls.Add(Me.PictureBox22)
-        Me.Controls.Add(Me.PictureBox21)
-        Me.Controls.Add(Me.PictureBox20)
-        Me.Controls.Add(Me.PictureBox19)
-        Me.Controls.Add(Me.PictureBox18)
-        Me.Controls.Add(Me.PictureBox17)
-        Me.Controls.Add(Me.PictureBox16)
-        Me.Controls.Add(Me.PictureBox15)
-        Me.Controls.Add(Me.PictureBox14)
-        Me.Controls.Add(Me.PictureBox13)
-        Me.Controls.Add(Me.PictureBox12)
-        Me.Controls.Add(Me.PictureBox11)
-        Me.Controls.Add(Me.PictureBox10)
-        Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "frmGame"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Snake & Ladder Game"
@@ -549,8 +635,13 @@ Partial Class frmGame
         CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.picDice, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -596,5 +687,13 @@ Partial Class frmGame
     Friend WithEvents Timer6 As System.Windows.Forms.Timer
     Friend WithEvents Timer7 As System.Windows.Forms.Timer
     Friend WithEvents Timer8 As System.Windows.Forms.Timer
-
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtLadder As TextBox
+    Friend WithEvents txtBite As TextBox
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GroupBox2 As GroupBox
 End Class
