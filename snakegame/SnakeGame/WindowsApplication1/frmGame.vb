@@ -9,6 +9,7 @@ Public Class frmGame
         picDice.Image = Image.FromFile(sPath + "\dice\" + dice.ToString() + ".png")
         iPos = iPos + dice
         subShowPlayer(iPos)
+
     End Sub
 
     Private Sub frmGame_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

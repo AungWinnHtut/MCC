@@ -16,3 +16,13 @@ E:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\bin\Debug\WindowsA
 E:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmGame.resources
 E:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
 E:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbprojResolveAssemblyReference.cache
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmGame.resources
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+J:\Students\MCC\codes\snakegame\SnakeGame\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
